@@ -1,0 +1,8 @@
+50 states, 10 alphabets, 1000 length of the input,0.001182 time taken
+50 states, 10 alphabets, 10000 length of the input,0.011243 time taken
+50 states, 10 alphabets, 100000 length of the input,0.050770 time taken
+50 states, 10 alphabets, 1000000 length of the input,0.352791 time taken
+50 states, 10 alphabets, 10000000 length of the input,2.682307 time taken
+50 states, 10 alphabets, 100000000 length of the input,38.094413 time taken
+5 states, 10 alphabets, 100000000 length of the input,10.956305 time taken
+5 states, 10 alphabets, 1000000000 length of the input,111.236695 time taken

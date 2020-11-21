@@ -1,0 +1,3 @@
+2049 degree of the resultant polynomial, timetaken = 0.006001
+32799 degree of the resultant polynomial, timetaken = 0.208827
+524799 degree of the resultant polynomial, timetaken = 15.943147

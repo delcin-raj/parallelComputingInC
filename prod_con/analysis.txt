@@ -1,0 +1,39 @@
+->16,16 num of producer and consumer threads used with 100 buff_size and 1000 jobs with sleep time 1 sec
+->Throughput is 0.009925
+
+->40,3 num of producer and consumer threads used with 100 buff_size and 500 jobs with sleep time 0.001000
+->Throughput is 0.000851
+
+->3,40 num of producer and consumer threads used with 100 buff_size and 1000 jobs with sleep time 0.001000
+->Throughput is 0.006343
+
+->3,40 num of producer and consumer threads used with 100 buff_size and 2000 jobs with sleep time 0.001000
+->Throughput is 0.012826 
+
+->3,40 num of producer and consumer threads used with 50 buff_size and 2000 jobs with sleep time 0.001000
+->Throughput is 0.003589 
+
+->3,40 num of producer and consumer threads used with 50 buff_size and 1000 jobs with sleep time 0.001000
+->Throughput is 0.003714 
+
+->40,3 num of producer and consumer threads used with 50 buff_size and 1000 jobs with sleep time 0.001000
+->Throughput is 0.001523 
+
+->32,32 num of producer and consumer threads used with 50 buff_size and 1000 jobs with sleep time 0.001000
+->Throughput is 0.001168 
+
+->32,32 num of producer and consumer threads used with 50 buff_size and 2000 jobs with sleep time 0.001000
+->Throughput is 0.002384 
+
+->32,32 num of producer and consumer threads used with 50 buff_size and 3000 jobs with sleep time 0.001000
+->Throughput is 0.002895 
+
+->32,32 num of producer and consumer threads used with 50 buff_size and 30000 jobs with sleep time 0.001000
+->Throughput is 0.014556 
+
+->64,64 num of producer and consumer threads used with 50 buff_size and 30000 jobs with sleep time 0.001000
+->Throughput is 0.005630 
+
+->64,64 num of producer and consumer threads used with 50 buff_size and 300000 jobs with sleep time 0.001000
+->Throughput is 0.047047 
+

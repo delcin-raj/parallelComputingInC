@@ -1,0 +1,55 @@
+#include<math.h>
+#include<stdio.h>
+#include<omp.h>
+#include<time.h>
+
+// I'm going to use the integral of 4*(1/(1+x^2)) to compute the value of pi
+
+#define NUM_THREADS 1
+int main(){
+    double step;
+    clock_t start,end;
+    start = clock();
+    omp_set_num_threads(NUM_THREADS);
+    int nthreads;  
+    double sum[NUM_THREADS];
+    FILE *fptr = fopen("result_single.txt","w");
+
+    long long int steps = 9000;
+
+for (int i = 1; i < 15; i++) {
+    steps *= 10; 
+    double step =1/(double)steps;
+#pragma omp parallel
+    {
+      double x;
+      long long int i;
+      int ID = omp_get_thread_num();
+      double summ = 0;
+      for(i=ID;i<=steps;i=i+nthreads){
+          x = (i)*step;
+          if (i == 0 || i == steps) {
+             summ +=  4/(1+(x*x));
+	  }
+	  else {
+	      summ += 8/(1+(x*x));
+	  }
+      }
+        #pragma omp critical
+	{
+            sum[ID] = summ;
+	}
+    }
+    int summ;
+    for(int i=0;i<nthreads;i++)
+        summ = summ + sum[i];
+    double pi = (step/2)*summ;
+    end = clock();
+    double timetaken = (double)(end-start)/CLOCKS_PER_SEC;
+    double error = M_PI-pi;
+    if error < 0
+        error *= -1;
+    fprintf(fptr,"%lld %f %f\n",steps,error,timetaken );
+}
+fclose(fptr);
+}

@@ -1,0 +1,12 @@
+len(P) = 10 len(T) = 1000, timetaken = 0.000038
+len(P) = 100 len(T) = 1000, timetaken = 0.000034
+len(P) = 100 len(T) = 10000, timetaken = 0.000315
+len(P) = 100 len(T) = 100000, timetaken = 0.001055
+len(P) = 100 len(T) = 1000000, timetaken = 0.012455
+len(P) = 100 len(T) = 10000000, timetaken = 0.059233
+len(P) = 100 len(T) = 100000000, timetaken = 0.614448
+len(P) = 100 len(T) = 1000000000, timetaken = 5.913951
+len(P) = 100 len(T) = 1410065408, timetaken = 9.538376
+len(P) = 100 len(T) = 1410065408, timetaken = 8.466934
+len(P) = 100 len(T) = 1000000000, timetaken = 6.030949
+len(P) = 100 len(T) = 2000000000, timetaken = 13.931744
